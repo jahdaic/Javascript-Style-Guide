@@ -8,5 +8,5 @@
 * Always use semicolons
 * Space after keywords if (condition) { ... }
 * Space after function name function name (arg) { ... }
-* Always use === instead of == – but obj == null is allowed to check null || undefined.
+* Always use === instead of == – but obj == null is allowed to check null or undefined.
 * Always prefix browser globals with window – except document and navigator are okay
