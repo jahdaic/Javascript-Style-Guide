@@ -25,3 +25,31 @@ function test()
 	var manchu = 3;
 }
 ```
+
+### Newlines
+
+Use UNIX-style newlines (\n), and a newline character as the last character of a file. Windows-style newlines (\r\n) are forbidden inside any repository.
+
+### No Trailing Whitespace
+
+Just like you brush your teeth after every meal, you clean up any trailing whitespace in your JS files before committing. Otherwise the rotten smell of careless neglect will eventually drive away contributors and/or co-workers.
+
+### Use Semicolons
+
+According to scientific research, the usage of semicolons is a core value of our community. Consider the points of the opposition, but be a traditionalist when it comes to abusing error correction mechanisms for cheap syntactic pleasures.
+
+### Line Length
+
+Generally limit your lines to 100 characters. Don't feel too bad for going over, though. Sometimes going a little bit longer makes code easier to read than breaking it up into multiple lines.
+
+### Use Single Quotes
+
+Use single quotes, unless you are writing JSON or to avoid escaping.
+
+```js
+// Right
+var foo = 'bar';
+
+// Wrong
+var foo = "bar";
+```
