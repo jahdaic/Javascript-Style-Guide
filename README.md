@@ -53,3 +53,47 @@ var foo = 'bar';
 // Wrong
 var foo = "bar";
 ```
+
+### Braces on Their Own Line
+
+Your opening braces go on the same line as the statement.
+
+```js
+// Right
+if (true)
+{
+	console.log('winning');
+}
+
+// Wrong
+if (true) {
+	console.log('losing');
+}
+```
+
+### Declare one variable per var statement
+
+Declare one variable per var statement, it makes it easier to re-order the lines. However, ignore Crockford when it comes to declaring variables deeper inside a function, just put the declarations wherever they make sense.
+
+```js
+// Right
+var keys   = ['foo', 'bar'];
+var values = [23, 42];
+
+var object = {};
+while (keys.length) {
+	var key = keys.pop();
+	object[key] = values.pop();
+}
+
+// Wrong
+var keys = ['foo', 'bar'],
+    values = [23, 42],
+    object = {},
+    key;
+
+while (keys.length) {
+	key = keys.pop();
+	object[key] = values.pop();
+}
+```
