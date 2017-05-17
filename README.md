@@ -17,7 +17,7 @@
 
 ## Formatting
 
-### Tabs for Indentation
+### Tabs For Indentation
 
 Use tabs for indenting your code. Displaying tabs as 4 spaces is recommended in your editor, but that's really up to personal choice. Spaces are used for spacing/lining up content.
 
@@ -57,7 +57,7 @@ var foo = 'bar';
 var foo = "bar";
 ```
 
-### Braces on Their Own Line
+### Braces On Their Own Line
 
 Your opening braces go on the same line as the statement.
 
@@ -74,7 +74,7 @@ if (true) {
 }
 ```
 
-### Declare one variable per var statement
+### Declare One Variable Per Var Statement
 
 Declare one variable per var statement, it makes it easier to re-order the lines. However, ignore Crockford when it comes to declaring variables deeper inside a function, just put the declarations wherever they make sense.
 
@@ -90,4 +90,48 @@ var keys = ['foo', 'bar'],
     values = [23, 42],
     object = {},
     key;
+```
+
+## Naming Conventions
+
+### Lower Camel Case For Variables, Properties And Function Names
+
+Variables, properties and function names should use lowerCamelCase. They should also be descriptive. Single character variables and uncommon abbreviations should generally be avoided.
+
+```js
+// Right
+var adminUser = db.query('SELECT * FROM users ...');
+
+// Wrong
+var admin_user = db.query('SELECT * FROM users ...');
+```
+
+### Upper Camel Case For Class Names
+
+Class names should be capitalized using UpperCamelCase.
+
+```js
+// Right
+function BankAccount() {}
+
+// Wrong
+function bank_Account() {}
+```
+
+### Use Uppercase For Constants
+
+Constants should be declared as regular variables or static class properties, using all uppercase letters.
+
+```js
+// Right
+var SECOND = 1 * 1000;
+
+function File() {}
+File.FULL_PERMISSIONS = 0777;
+
+// Wrong
+const SECOND = 1 * 1000;
+
+function File() {}
+File.fullPermissions = 0777;
 ```
