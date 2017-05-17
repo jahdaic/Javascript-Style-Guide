@@ -1,6 +1,7 @@
 # Javascript Style Guide
 
-> “Arguments over style are pointless. There should be a style guide, and you should follow it” -Rebecca Murphey
+> “Arguments over style are pointless. There should be a style guide, and you should follow it”
+> -Rebecca Murphey
 
 ## Basic Rules
 
