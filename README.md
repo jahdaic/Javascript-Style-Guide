@@ -120,7 +120,7 @@ function bank_Account() {}
 
 ### Use Uppercase For Constants
 
-Constants should be declared as regular variables or static class properties, using all uppercase letters.
+Constants should be declared as regular variables or static class properties, using all UPPERCASE letters.
 
 ```js
 // Right
@@ -134,4 +134,79 @@ const SECOND = 1 * 1000;
 
 function File() {}
 File.fullPermissions = 0777;
+```
+
+## Variables
+
+### Object / Array Creation
+
+Use trailing commas and put short declarations on a single line. Only quote keys when your interpreter complains.
+
+```js
+// Right
+var a = ['hello', 'world'];
+var b = {
+  good: 'code',
+  'is generally': 'pretty',
+};
+
+// Wrong
+var a = [
+  'hello', 'world'
+];
+var b = {"good": 'code'
+        , is generally: 'pretty'
+        };
+```
+
+## Conditionals
+
+### Use The === Operator
+
+Programming is not about remembering stupid rules. Use the triple equality operator as it will work just as expected.
+
+```js
+// Right
+var a = 0;
+if (a !== '') {
+  console.log('winning');
+}
+
+// Wrong
+var a = 0;
+if (a == '') {
+  console.log('losing');
+}
+```
+
+### Use Multi-line Ternary Operator
+
+The ternary operator should not be used on a single line. Split it up into multiple lines instead.
+
+```js
+// Right
+var foo = (a === b)
+  ? 1
+  : 2;
+  
+// Wrong
+var foo = (a === b) ? 1 : 2;
+```
+
+### Use Descriptive Conditions
+
+Any non-trivial conditions should be assigned to a descriptively named variable or function.
+
+```js
+// Right
+var isValidPassword = password.length >= 4 && /^(?=.*\d).{4,}$/.test(password);
+
+if (isValidPassword) {
+  console.log('winning');
+}
+
+// Wrong
+if (password.length >= 4 && /^(?=.*\d).{4,}$/.test(password)) {
+  console.log('losing');
+}
 ```
