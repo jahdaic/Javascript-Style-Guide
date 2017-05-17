@@ -1,6 +1,6 @@
 # Javascript Style Guide
 
-> “Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec.” -Idan Gazit
+> “Arguments over style are pointless. There should be a style guide, and you should follow it” -Rebecca Murphey
 
 ## Basic Rules
 
